@@ -1,0 +1,15 @@
+from: seller
+name of company
+address
+emaoil
+
+to:
+buyer:{contact Name, Company Name, Address, Phone, Email}
+address
+
+qty
+price,
+description
+
+karad mongo pass: PraisesKaradng03 
+total
