@@ -31,14 +31,15 @@ const getSingleInvoice = asyncHandler(async(req, res) => {
 
 const createInvoice = asyncHandler(async(req, res) => {
     try {
-        const {name, address, phone, email, invoiceNum, description, rate} = req.body
+        const {name, address, phone, email, invoiceNum, description, rate, qty} = req.body
         let createInv = { name,
             address,
             phone,
             email,
             invoiceNum,
             description,
-            rate
+            rate,
+            qty
 
     }
         const newInvoice = await Invoice.create(createInv)
