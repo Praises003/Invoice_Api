@@ -42,10 +42,12 @@ const invoiceSchema = new mongoose.Schema({
         default: Date.now
     },
     description: {
-        type: String
+        type: String,
+        required: true
     },
     rate: {
-        type: Number
+        type: Number,
+        required: true
     },
 
     total: {
